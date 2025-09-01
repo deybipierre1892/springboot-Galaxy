@@ -65,7 +65,7 @@ public class ProductControllerV2 {
             })
             .orElse(ResponseEntity.notFound().build());
     }
-    
+    // Probando DELETE
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteProduct(@PathVariable Long id) {
         if (!productService.findById(id).isPresent()) {

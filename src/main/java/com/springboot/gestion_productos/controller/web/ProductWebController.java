@@ -53,7 +53,7 @@ public class ProductWebController {
         } catch (Exception e) {
             model.addAttribute("error", "Ocurrió un error al cargar productos: " + e.getMessage());
         }
-        return "list-products";
+        return "list-products"; // Redirige a list-products.html
     }
 
     @GetMapping("/new")

@@ -15,7 +15,7 @@ import io.swagger.v3.oas.annotations.Hidden;
 
 @RestController
 @RequestMapping("/api/v1/products")
-@Hidden
+//@Hidden
 public class ProductControllerV1 {
 
     @Autowired

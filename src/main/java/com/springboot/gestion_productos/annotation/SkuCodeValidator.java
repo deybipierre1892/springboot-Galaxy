@@ -14,7 +14,7 @@ public class SkuCodeValidator implements ConstraintValidator<SkuCode, String> {
         if (sku == null) {
             return false;
         }
-        // Expresión regular para validar el formato. Ejemplo: LP-TC-001
+        // Expresión para validar el formato. Ejemplo: LP-TC-001
         return sku.matches("[A-Z]{2}-[A-Z]{2}-\\d{3}");
     }
 }
